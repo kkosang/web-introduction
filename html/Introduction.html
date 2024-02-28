@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>소개 페이지</title>
+    <script src="/js/greeting.js"></script>
+</head>
+<body>
+<div>
+    <h1>자기소개</h1>
+    <ul>
+        <li>이름: 꼬상</li>
+        <li>안녕하세요 안드로이드 6기 꼬상입니다. 저의 인생영화 BEST5를 소개하겠습니다.</li>
+        <li>마지막으로 영화 추천해주시면 감사하겠습니다 !</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <h2>인생 영화 BEST5</h2>
+    <table border="1">
+        <tr>
+            <th>순위</th>
+            <th>제목</th>
+            <th>포스터</th>
+            <th>바로가기</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>타이타닉</td>
+            <td><img src="/images/movie1.jpeg" alt="타이타닉" width="150" height="200"></td>
+            <td>
+                <a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=1756832&qvt=0&query=%EC%98%81%ED%99%94%20%ED%83%80%EC%9D%B4%ED%83%80%EB%8B%89"
+                   target="_blank">영화정보</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>어바웃 타임</td>
+            <td><img src="/images/movie2.jpeg" alt="어바웃 타임" width="150" height="200"></td>
+            <td>
+                <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EC%96%B4%EB%B0%94%EC%9B%83%ED%83%80%EC%9E%84&oquery=%EC%8B%A0%EA%B3%BC%ED%95%A8%EA%BB%98&tqi=iO8vPdqo1LVssfBtvGwssssstdG-206096">영화정보</a>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>헝거게임</td>
+            <td><img src="/images/movie3.jpeg" alt="헝거게임" width="150" height="200"></td>
+            <td>
+                <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%ED%97%9D%EA%B1%B0%EA%B2%8C%EC%9E%84&oquery=%EC%96%B4%EB%B0%94%EC%9B%83%ED%83%80%EC%9E%84&tqi=iO8vodqo1SossfkOzlRssssssJ8-024409"
+                   target="_blank">영화정보</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>타짜</td>
+            <td><img src="/images/movie4.jpeg" alt="타짜" width="150" height="200"></td>
+            <td>
+                <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%ED%83%80%EC%A7%9C1&oquery=%ED%83%80%EC%A7%9C&tqi=iO8vesqo1SCssfcwO7Vssssstys-333196"
+                   target="_blank">영화정보</a></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>기생충</td>
+            <td><img src="/images/movie5.jpeg" alt="기생충" width="150" height="200"></td>
+            <td>
+                <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EA%B8%B0%EC%83%9D%EC%B6%A9&oquery=%ED%97%9D%EA%B1%B0%EA%B2%8C%EC%9E%84&tqi=iO8bEsqo15Vss6VvqCNssssssyG-130141"
+                   target="_blank">영화정보</a></td>
+        </tr>
+    </table>
+</div>
+<hr>
+
+<div>
+    <h2>방명록</h2>
+    <form>
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label>좋아하는 영화:</label><br>
+        <input type="checkbox" id="movie1" name="favorite_movie" value="타이타닉">
+        <label for="movie1">타이타닉</label><br>
+        <input type="checkbox" id="movie2" name="favorite_movie" value="어바웃 타임">
+        <label for="movie2">어바웃타임</label><br>
+        <input type="checkbox" id="movie3" name="favorite_movie" value="헝거게임">
+        <label for="movie3">헝거게임</label><br>
+        <input type="checkbox" id="movie4" name="favorite_movie" value="타짜">
+        <label for="movie4">타짜</label><br>
+        <input type="checkbox" id="movie5" name="favorite_movie" value="기생충">
+        <label for="movie5">기생충</label><br>
+
+        <button type="button" onclick="showGreeting()">등록</button>
+        <button type="reset">취소</button>
+    </form>
+</div>
+
+</body>
+</html>
